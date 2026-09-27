@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "node:path";
-import { defineConfig, type Plugin, type ViteDevServer } from "vite";
+import { defineConfig, type Plugin, type ResolvedConfig, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 // =============================================================================
@@ -203,7 +203,50 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+/**
+ * The imported WordPress snapshot contains cached responses whose query string
+ * became part of the filename (for example, `xmlrpc.php?rsd`). Browsers treat
+ * the query as part of the URL, but Netlify correctly rejects `?` and `#` in
+ * deployed filesystem paths. Canonical copies of these assets/pages are also
+ * present, so exclude only the invalid cache artifacts from production output.
+ */
+function vitePluginNetlifySafeFilenames(): Plugin {
+  let outputDirectory = "";
+
+  const removeInvalidFilenames = (directory: string) => {
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.name.includes("?") || entry.name.includes("#")) {
+        fs.rmSync(entryPath, { recursive: entry.isDirectory(), force: true });
+      } else if (entry.isDirectory()) {
+        removeInvalidFilenames(entryPath);
+      }
+    }
+  };
+
+  return {
+    name: "netlify-safe-filenames",
+    apply: "build",
+    configResolved(config: ResolvedConfig) {
+      outputDirectory = path.resolve(config.root, config.build.outDir);
+    },
+    closeBundle() {
+      if (fs.existsSync(outputDirectory)) {
+        removeInvalidFilenames(outputDirectory);
+      }
+    },
+  };
+}
+
+const plugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  vitePluginManusRuntime(),
+  vitePluginManusDebugCollector(),
+  vitePluginStorageProxy(),
+  vitePluginNetlifySafeFilenames(),
+];
 
 export default defineConfig({
   plugins,
