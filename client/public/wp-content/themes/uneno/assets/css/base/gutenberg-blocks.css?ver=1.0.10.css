@@ -1,0 +1,1241 @@
+/**
+ * Gutenberg Block styles
+ */
+/**
+ * Typography styles
+ */
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    color: #3a3a3a;
+    margin: 0.5em 0;
+}
+
+h1,
+.h1 {
+    font-size: 46px;
+}
+
+h2,
+.h2 {
+    font-size: 32px;
+}
+
+h3,
+.h3 {
+    font-size: 26px;
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+}
+
+figure,
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+figure {
+    max-width: 100%;
+}
+
+.wp-caption-text {
+    color: #979797;
+    margin-top: 4px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+table tbody+tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+table .table {
+    background-color: #fff;
+}
+
+table th,
+table td {
+    border: 1px solid #dee2e6;
+}
+
+table thead th,
+table thead td {
+    border-bottom-width: 2px;
+}
+
+.single-post-author .author-detail .author-name {
+    font-family: "Baloo", "Poppins", sans-serif;
+}
+
+blockquote {
+    position: relative;
+    padding: 32px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    font-family: "Baloo", "Poppins", sans-serif;
+    color: #3a3a3a;
+    margin-top: 57px;
+    margin-bottom: 52px;
+}
+
+blockquote:before {
+    display: inline-block;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="27px"><path fill-rule="evenodd" fill="rgb(185, 45, 94)" d="M31.716,21.502 C30.820,24.738 27.875,26.998 24.554,26.998 C24.542,26.998 24.532,26.998 24.521,26.997 C21.829,26.891 19.737,25.829 18.303,23.839 C15.741,20.284 16.046,14.635 17.086,10.878 C18.858,4.474 23.057,0.001 27.298,0.001 C27.561,0.001 27.827,0.020 28.087,0.056 C28.327,0.089 28.541,0.225 28.675,0.430 C28.808,0.635 28.846,0.888 28.781,1.124 L28.009,3.914 C27.920,4.236 27.652,4.475 27.325,4.524 C23.792,5.055 22.019,9.767 21.281,12.499 C22.046,12.164 23.034,11.891 24.217,11.891 C24.984,11.891 25.772,12.007 26.559,12.236 C28.480,12.795 30.069,14.056 31.034,15.788 C32.008,17.538 32.251,19.567 31.716,21.502 ZM8.237,26.998 C8.226,26.998 8.215,26.997 8.204,26.997 C5.513,26.891 3.421,25.829 1.987,23.839 C-0.575,20.284 -0.270,14.635 0.770,10.878 C2.542,4.474 6.741,0.001 10.982,0.001 C11.245,0.001 11.511,0.020 11.772,0.056 C12.012,0.089 12.226,0.225 12.359,0.430 C12.492,0.635 12.530,0.888 12.465,1.124 L11.693,3.914 C11.604,4.236 11.336,4.475 11.009,4.524 C7.476,5.055 5.703,9.767 4.965,12.499 C5.730,12.164 6.718,11.891 7.901,11.891 C8.668,11.891 9.456,12.007 10.244,12.236 C12.164,12.795 13.753,14.056 14.718,15.788 C15.693,17.538 15.935,19.567 15.399,21.501 C14.504,24.737 11.558,26.998 8.237,26.998 Z"/></svg>');
+    position: absolute;
+    top: 26px;
+    left: 24px;
+    content: "";
+    width: 32px;
+    height: 27px;
+    background-repeat: no-repeat;
+}
+
+blockquote p {
+    margin-left: 67px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (min-width: 992px) {
+    blockquote p {
+        font-size: 26px;
+        line-height: 37px;
+    }
+}
+
+blockquote p:last-child {
+    margin-bottom: 0 !important;
+}
+
+blockquote p+cite {
+    margin-left: 67px;
+}
+
+blockquote cite {
+    font-size: 20px;
+    display: block;
+}
+
+.form-row label,
+.form-row span {
+    color: #979797;
+}
+
+@media (min-width: 992px) {
+
+    .uneno-align-wide .hentry .entry-content .alignfull,
+    .uneno-align-wide .hentry .entry-content .alignwide {
+        width: auto;
+        max-width: 1000%;
+        padding-left: 1.41575em;
+        padding-right: 1.41575em;
+        clear: both;
+    }
+
+    .uneno-align-wide .hentry .entry-content .alignfull {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding: 0;
+    }
+
+    .uneno-align-wide .hentry .entry-content .alignwide {
+        margin-left: calc(25% - 25vw);
+        margin-right: calc(25% - 25vw);
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content>*:last-child,
+.editor-styles-wrapper .entry-content>*:last-child {
+    margin-bottom: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h6,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h6,
+.editor-styles-wrapper .entry-content h1,
+.editor-styles-wrapper .entry-content h2,
+.editor-styles-wrapper .entry-content h3,
+.editor-styles-wrapper .entry-content h4,
+.editor-styles-wrapper .entry-content h5,
+.editor-styles-wrapper .entry-content h6,
+.editor-styles-wrapper .entry-content .h1,
+.editor-styles-wrapper .entry-content .h2,
+.editor-styles-wrapper .entry-content .h3,
+.editor-styles-wrapper .entry-content .h4,
+.editor-styles-wrapper .entry-content .h5,
+.editor-styles-wrapper .entry-content .h6 {
+    font-family: "Baloo", "Poppins", sans-serif;
+    clear: both;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h1,
+.editor-styles-wrapper .entry-content h1,
+.editor-styles-wrapper .entry-content .h1 {
+    margin-bottom: 37px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h2,
+.editor-styles-wrapper .entry-content h2,
+.editor-styles-wrapper .entry-content .h2 {
+    margin-bottom: 43px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h3,
+.editor-styles-wrapper .entry-content h3,
+.editor-styles-wrapper .entry-content .h3 {
+    margin-bottom: 47px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content h6,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .h6,
+.editor-styles-wrapper .entry-content h4,
+.editor-styles-wrapper .entry-content .h4,
+.editor-styles-wrapper .entry-content h5,
+.editor-styles-wrapper .entry-content .h5,
+.editor-styles-wrapper .entry-content h6,
+.editor-styles-wrapper .entry-content .h6 {
+    margin-bottom: 50px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content dl,
+.editor-styles-wrapper .entry-content dl {
+    margin-bottom: 44px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h6,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h6,
+.editor-styles-wrapper .entry-content p+h1,
+.editor-styles-wrapper .entry-content p+h2,
+.editor-styles-wrapper .entry-content p+h3,
+.editor-styles-wrapper .entry-content p+h4,
+.editor-styles-wrapper .entry-content p+h5,
+.editor-styles-wrapper .entry-content p+h6,
+.editor-styles-wrapper .entry-content p+.h1,
+.editor-styles-wrapper .entry-content p+.h2,
+.editor-styles-wrapper .entry-content p+.h3,
+.editor-styles-wrapper .entry-content p+.h4,
+.editor-styles-wrapper .entry-content p+.h5,
+.editor-styles-wrapper .entry-content p+.h6 {
+    margin-top: 45px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h2,
+.editor-styles-wrapper .entry-content p+h2,
+.editor-styles-wrapper .entry-content p+.h2 {
+    padding-bottom: 34px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h3,
+.editor-styles-wrapper .entry-content p+h3,
+.editor-styles-wrapper .entry-content p+.h3 {
+    padding-bottom: 35px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h4,
+.editor-styles-wrapper .entry-content p+h4,
+.editor-styles-wrapper .entry-content p+.h4 {
+    padding-bottom: 38px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h5,
+.editor-styles-wrapper .entry-content p+h5,
+.editor-styles-wrapper .entry-content p+.h5 {
+    padding-bottom: 37px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+h6,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p+.h6,
+.editor-styles-wrapper .entry-content p+h6,
+.editor-styles-wrapper .entry-content p+.h6 {
+    padding-bottom: 40px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content table,
+.editor-styles-wrapper .entry-content table {
+    margin-bottom: 53px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content table th,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content table td,
+.editor-styles-wrapper .entry-content table th,
+.editor-styles-wrapper .entry-content table td {
+    border: 1px solid #dee2e6;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content table th a,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content table td a,
+.editor-styles-wrapper .entry-content table th a,
+.editor-styles-wrapper .entry-content table td a {
+    color: #b92d5e;
+    font-weight: bold;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content a,
+.editor-styles-wrapper .entry-content a {
+    color: #b92d5e;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .sharedaddy,
+.editor-styles-wrapper .entry-content .sharedaddy {
+    display: none;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .page-links,
+.editor-styles-wrapper .entry-content .page-links {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .page-links>.page-links-inner,
+.editor-styles-wrapper .entry-content .page-links>.page-links-inner {
+    margin-left: 10px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .page-links>.page-links-inner:first-child>a:first-child,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .page-links>.page-links-inner:first-child>span:first-child,
+.editor-styles-wrapper .entry-content .page-links>.page-links-inner:first-child>a:first-child,
+.editor-styles-wrapper .entry-content .page-links>.page-links-inner:first-child>span:first-child {
+    padding: 7px 15px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content p,
+.editor-styles-wrapper .entry-content p {
+    margin-bottom: 25px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .wp-block-quote p,
+.editor-styles-wrapper .entry-content .wp-block-quote p {
+    margin-bottom: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content ul,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content ol,
+.editor-styles-wrapper .entry-content ul,
+.editor-styles-wrapper .entry-content ol {
+    margin-bottom: 44px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content address,
+.editor-styles-wrapper .entry-content address {
+    margin-bottom: 25px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content pre,
+.editor-styles-wrapper .entry-content pre {
+    margin-bottom: 44px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content ol ul,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content ol ol,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content ul ul,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content ul ol,
+.editor-styles-wrapper .entry-content ol ul,
+.editor-styles-wrapper .entry-content ol ol,
+.editor-styles-wrapper .entry-content ul ul,
+.editor-styles-wrapper .entry-content ul ol {
+    margin-bottom: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content code,
+.editor-styles-wrapper .entry-content code {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    background-color: transparent;
+    color: #3a3a3a;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content blockquote cite,
+.editor-styles-wrapper .entry-content blockquote cite {
+    color: #979797;
+    font-style: normal;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content blockquote code,
+.editor-styles-wrapper .entry-content blockquote code {
+    font-size: 26px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .wp-block-pullquote p,
+.editor-styles-wrapper .entry-content .wp-block-pullquote p {
+    margin-bottom: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .wp-block-pullquote cite,
+.editor-styles-wrapper .entry-content .wp-block-pullquote cite {
+    margin-top: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor h6,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor .h1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor .h2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor .h3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor .h4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor .h5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .elementor .h6,
+.editor-styles-wrapper .entry-content .elementor h1,
+.editor-styles-wrapper .entry-content .elementor h2,
+.editor-styles-wrapper .entry-content .elementor h3,
+.editor-styles-wrapper .entry-content .elementor h4,
+.editor-styles-wrapper .entry-content .elementor h5,
+.editor-styles-wrapper .entry-content .elementor h6,
+.editor-styles-wrapper .entry-content .elementor .h1,
+.editor-styles-wrapper .entry-content .elementor .h2,
+.editor-styles-wrapper .entry-content .elementor .h3,
+.editor-styles-wrapper .entry-content .elementor .h4,
+.editor-styles-wrapper .entry-content .elementor .h5,
+.editor-styles-wrapper .entry-content .elementor .h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .wp-block-archives.aligncenter,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .entry-content .wp-block-categories.aligncenter,
+.editor-styles-wrapper .entry-content .wp-block-archives.aligncenter,
+.editor-styles-wrapper .entry-content .wp-block-categories.aligncenter {
+    text-align: center;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .wp-block-latest-posts li,
+.editor-styles-wrapper .wp-block-latest-posts li {
+    margin-bottom: 6px;
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-image .uneno-align-wide.alignfull,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-image .uneno-align-wide.alignwide,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-image .uneno-align-wide.alignfull,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-image .uneno-align-wide.alignwide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-cover-image .uneno-align-wide.alignfull,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-cover-image .uneno-align-wide.alignwide,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-cover .uneno-align-wide.alignfull,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-cover .uneno-align-wide.alignwide,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-cover-image .uneno-align-wide.alignfull,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-cover-image .uneno-align-wide.alignwide,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-cover .uneno-align-wide.alignfull,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-cover .uneno-align-wide.alignwide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright {
+    padding: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft blockquote,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright blockquote,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft blockquote,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright blockquote {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft blockquote:before,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright blockquote:before,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft blockquote:before,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright blockquote:before {
+    top: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft blockquote p,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright blockquote p,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft blockquote p,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright blockquote p {
+    font-size: 26px;
+    line-height: 37px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .has-small-font-size,
+.editor-styles-wrapper .hentry .entry-content .has-small-font-size {
+    font-size: ms(-1);
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .has-medium-font-size,
+.editor-styles-wrapper .hentry .entry-content .has-medium-font-size {
+    font-size: ms(2);
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .has-large-font-size,
+.editor-styles-wrapper .hentry .entry-content .has-large-font-size {
+    font-size: ms(3);
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .has-huge-font-size,
+.editor-styles-wrapper .hentry .entry-content .has-huge-font-size {
+    font-size: ms(4);
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio {
+    margin-bottom: 1.41575em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio audio,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio audio {
+    width: 100%;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio.alignleft audio,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio.alignright audio,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio.alignleft audio,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio.alignright audio {
+    max-width: 284px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio.aligncenter,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio.aligncenter {
+    margin: 0 auto 43px;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio.alignfull,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-audio.alignwide,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio.alignfull,
+.editor-styles-wrapper .hentry .entry-content .wp-block-audio.alignwide {
+    width: auto;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-video,
+.editor-styles-wrapper .hentry .entry-content .wp-block-video {
+    margin-bottom: 1.41575em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-video video,
+.editor-styles-wrapper .hentry .entry-content .wp-block-video video {
+    width: 100%;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content p.wp-block-subhead,
+.editor-styles-wrapper .hentry .entry-content p.wp-block-subhead {
+    font-size: 16px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-verse,
+.editor-styles-wrapper .hentry .entry-content .wp-block-verse {
+    margin-bottom: 53px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button {
+    margin-bottom: 1.41575em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 14px 30px;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 36px;
+    color: #fff;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link {
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link:hover,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link:focus,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link:hover,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link:focus {
+    text-decoration: none;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link:focus,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link.focus,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link:focus,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link.disabled,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link:disabled,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link.disabled,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link:disabled {
+    opacity: 0.65;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button .wp-block-button__link:not(:disabled):not(.disabled),
+.editor-styles-wrapper .hentry .entry-content .wp-block-button .wp-block-button__link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-button:not(.is-style-squared) .wp-block-button__link,
+.editor-styles-wrapper .hentry .entry-content .wp-block-button:not(.is-style-squared) .wp-block-button__link {
+    border-radius: 36px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts,
+.editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts {
+    padding-left: 0;
+    list-style: none;
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.alignfull,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.alignfull {
+        padding-left: 1.41575em;
+        padding-right: 1.41575em;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts__post-date,
+.editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts__post-date {
+    font-size: ms(-1);
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.has-dates li,
+.editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.has-dates li {
+    margin: 0 0 1em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid li,
+.editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid li {
+    margin: 0 0 16px 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.has-dates li,
+.editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.has-dates li {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid li {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-1 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-1 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-2 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-2 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-3 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-3 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-4 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-4 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-5 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-5 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-6 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-6 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-1 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-2 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-3 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-4 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-5 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-6 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-1 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-2 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-3 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-4 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-5 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-6 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-1 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-2 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-3 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-4 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-5 li,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid.columns-6 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-1 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-2 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-3 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-4 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-5 li,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid.columns-6 li {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-categories-list,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-archives-list,
+.editor-styles-wrapper .hentry .entry-content .wp-block-categories-list,
+.editor-styles-wrapper .hentry .entry-content .wp-block-archives-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-categories-list li,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-archives-list li,
+.editor-styles-wrapper .hentry .entry-content .wp-block-categories-list li,
+.editor-styles-wrapper .hentry .entry-content .wp-block-archives-list li {
+    color: #ccc;
+    padding: 4px 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-categories-list li a,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-archives-list li a,
+.editor-styles-wrapper .hentry .entry-content .wp-block-categories-list li a,
+.editor-styles-wrapper .hentry .entry-content .wp-block-archives-list li a {
+    color: #979797;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-categories-list li a:hover,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-archives-list li a:hover,
+.editor-styles-wrapper .hentry .entry-content .wp-block-categories-list li a:hover,
+.editor-styles-wrapper .hentry .entry-content .wp-block-archives-list li a:hover {
+    color: #3a3a3a;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-categories-list li:first-child,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-archives-list li:first-child,
+.editor-styles-wrapper .hentry .entry-content .wp-block-categories-list li:first-child,
+.editor-styles-wrapper .hentry .entry-content .wp-block-archives-list li:first-child {
+    padding-top: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-categories-list ul,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-archives-list ul,
+.editor-styles-wrapper .hentry .entry-content .wp-block-categories-list ul,
+.editor-styles-wrapper .hentry .entry-content .wp-block-archives-list ul {
+    padding-top: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-separator,
+.editor-styles-wrapper .hentry .entry-content .wp-block-separator {
+    clear: both;
+    border: 0;
+    margin: 0 auto 1.41575em;
+    background-color: #dadada;
+    height: 1px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-separator.is-style-dots,
+.editor-styles-wrapper .hentry .entry-content .wp-block-separator.is-style-dots {
+    background: 0 0;
+    text-align: center;
+    max-width: none;
+    line-height: 1;
+    height: auto;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-image,
+.editor-styles-wrapper .hentry .entry-content .wp-block-image {
+    margin-bottom: 1.41575em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-image .alignleft,
+.editor-styles-wrapper .hentry .entry-content .wp-block-image .alignleft {
+    margin-right: 1em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-image .alignright,
+.editor-styles-wrapper .hentry .entry-content .wp-block-image .alignright {
+    margin-left: 1em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-image figcaption,
+.editor-styles-wrapper .hentry .entry-content .wp-block-image figcaption {
+    margin: 0;
+    padding: 0.875em 0;
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-1,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-2,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-3,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-4,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-5,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-6,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-1,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-2,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-3,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-4,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-5,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-6 {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-1,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-2,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-3,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-4,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-5,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-6,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-1,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-2,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-3,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-4,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-5,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-6 {
+        margin-bottom: 20px;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery>.blocks-gallery-item,
+.editor-styles-wrapper .hentry .entry-content .wp-block-gallery>.blocks-gallery-item {
+    margin: 0 0 10px;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+@media (min-width: 768px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery>.blocks-gallery-item {
+        margin: 0 0 30px;
+        -webkit-box-flex: 0;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery>.blocks-gallery-item.columns-2,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery>.blocks-gallery-item.columns-2 {
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery>.blocks-gallery-item {
+        margin-bottom: 30px;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-1>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-1>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-2>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-2>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-3>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-3>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-4>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-4>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-5>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-5>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-6>.blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-6>.blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-7 .blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-7 .blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 14.28571425%;
+        max-width: 14.28571425%;
+    }
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-gallery.columns-8 .blocks-gallery-item,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-gallery.columns-8 .blocks-gallery-item {
+        -webkit-box-flex: 0;
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote.is-large,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote.is-style-large,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote.is-large,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote.is-style-large,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote {
+    padding: 32px 0;
+    margin-top: 57px;
+    margin-bottom: 52px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote:not(.is-large):not(.is-style-large),
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote:not(.is-large):not(.is-style-large) {
+    border-left: none;
+    padding-left: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote__citation,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote cite,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote footer,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote__citation,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote cite,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote footer,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote__citation,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote cite,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote footer,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote__citation,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote cite,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote footer {
+    font-size: 20px;
+    text-transform: none;
+    color: #979797;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote__citation,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote cite,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote__citation,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote cite {
+    margin-top: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote {
+    border-width: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-quote.is-large cite,
+.editor-styles-wrapper .hentry .entry-content .wp-block-quote.is-large cite {
+    text-align: left;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .hentry .entry-content .wp-block-button:not(.is-style-squared) .wp-block-button__link,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .editor-styles-wrapper .wp-block-button:not(.is-style-squared) .wp-block-button__link,
+.editor-styles-wrapper .hentry .entry-content .hentry .entry-content .wp-block-button:not(.is-style-squared) .wp-block-button__link,
+.editor-styles-wrapper .hentry .entry-content .editor-styles-wrapper .wp-block-button:not(.is-style-squared) .wp-block-button__link {
+    border-radius: 36px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content blockquote.wp-block-pullquote:before,
+.editor-styles-wrapper .hentry .entry-content blockquote.wp-block-pullquote:before {
+    top: 47px;
+    left: 35px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote blockquote,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote blockquote {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignfull,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignwide,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignfull,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignwide {
+    padding: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright.aligncenter,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft.aligncenter,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright.aligncenter,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft.aligncenter {
+    max-width: 305px;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft,
+.editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright {
+    border-width: 0;
+}
+
+@media (max-width: 991.98px) {
+
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignleft,
+    body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-pullquote.alignright,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignleft,
+    .editor-styles-wrapper .hentry .entry-content .wp-block-pullquote.alignright {
+        margin-left: 0;
+    }
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-table.alignright,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-table.alignleft,
+.editor-styles-wrapper .hentry .entry-content .wp-block-table.alignright,
+.editor-styles-wrapper .hentry .entry-content .wp-block-table.alignleft {
+    display: table;
+    width: auto;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-table.alignright+.wp-block-separator,
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-table.alignleft+.wp-block-separator,
+.editor-styles-wrapper .hentry .entry-content .wp-block-table.alignright+.wp-block-separator,
+.editor-styles-wrapper .hentry .entry-content .wp-block-table.alignleft+.wp-block-separator {
+    clear: both;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-latest-posts.is-grid li,
+.editor-styles-wrapper .hentry .entry-content .wp-block-latest-posts.is-grid li {
+    margin: 0 0 16px 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content pre,
+.editor-styles-wrapper .hentry .entry-content pre {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1.618em 1.618em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-file,
+.editor-styles-wrapper .hentry .entry-content .wp-block-file {
+    margin-bottom: 1.41575em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-file__button,
+.editor-styles-wrapper .hentry .entry-content .wp-block-file__button {
+    font-size: 0.875em;
+    line-height: 1.618;
+    border: 0;
+    background: none;
+    color: #fff;
+    background-color: #43454b;
+    border-color: #43454b;
+    cursor: pointer;
+    padding: 0.6180469716em 1.41575em;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: none;
+    display: inline-block;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-preformatted pre,
+.editor-styles-wrapper .hentry .entry-content .wp-block-preformatted pre {
+    font-size: 1em;
+}
+
+body.uneno-align-wide:not(.elementor-page):not(.woocommerce-page):not(.page-template-template-homepage-v1):not(.page-template-template-homepage-v2):not(.page-template-template-homepage-v3):not(.page-template-template-homepage-v4):not(.page-template-template-homepage-v5):not(.page-template-template-aboutpage-php) .hentry .entry-content .wp-block-code,
+.editor-styles-wrapper .hentry .entry-content .wp-block-code {
+    border: none;
+    border-radius: 0;
+    padding: 1.618em;
+}
